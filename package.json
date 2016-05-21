@@ -1,0 +1,29 @@
+{
+  "name": "animalbrackets",
+  "version": "1.0.0",
+  "description": "Which is cuter game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cute",
+    "animal",
+    "brackets"
+  ],
+  "author": "Taylor Nodell",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "jshint": "^2.9.2"
+  }
+  "repository" :
+  { "type" : "git",
+    "url" : "https://github.com/npm/npm.git"
+  }
+}
