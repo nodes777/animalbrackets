@@ -1,15 +1,19 @@
-.bold{
-	font-style: bold;
-}
-.italic{
-	font-style: italic;
-}
-.underline{
-	font-style: underline;
-}
-.oddRow{
-	background-color: grey;
+*{
+	border-style: solid;
+	border-width: 1px;
 }
 .text-center{
+	text-align: center;
+}
+.img-center{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.animalImage{
+	border-style: solid;
+	border-width: 1px;
+}
+.animalName{
 	text-align: center;
 }

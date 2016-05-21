@@ -3,5 +3,6 @@ angular.module("root", [])
         $scope.title = "Which is Cuter?";
 
         /*Two Way Bindings http://www.learn-angular.org/#!/lessons/two-way-bindings*/
-       
+       $scope.lName = "Pup";
+       $scope.rName = "Kitten";
     }]);
