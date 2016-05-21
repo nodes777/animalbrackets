@@ -1,0 +1,15 @@
+.bold{
+	font-style: bold;
+}
+.italic{
+	font-style: italic;
+}
+.underline{
+	font-style: underline;
+}
+.oddRow{
+	background-color: grey;
+}
+.text-center{
+	text-align: center;
+}
