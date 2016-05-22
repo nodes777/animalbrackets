@@ -5,21 +5,21 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   <body>
-    <div ng-controller="index" class="row">
+    <div class="row">
       <div class="text-center">
         <h2>{{title}}</h2>
       </div>
-      <div class="col-md-6">
+      <div ng-controller="leftAnimal" class="col-md-6">
         <div class ="animalImage"><img class="img-center" src="http://placehold.it/350x400"></div>
-        <div class ="animalName">{{lName}}</div>
-        <div class ="animalDescription">{{lDescription}}</div>
-        <button type="button" class="btn btn-info img-center">{{lName}}</button>
+        <div class ="animalName">{{name}}</div>
+        <div class ="animalDescription">{{description}}</div>
+        <button type="button" class="btn btn-info img-center">{{name}}</button>
       </div>
-      <div class="col-md-6">
+      <div ng-controller="rightAnimal" class="col-md-6">
         <div class ="animalImage"><img class="img-center" src="http://placehold.it/350x400"></div>
-        <div class ="animalName">{{rName}}</div>
-        <div class ="animalDescription">{{rDescription}}</div>
-        <button type="button" class="btn btn-info img-center">{{rName}}</button>
+        <div class ="animalName">{{name}}</div>
+        <div class ="animalDescription">{{description}}</div>
+        <button type="button" class="btn btn-info img-center">{{name}}</button>
       </div>
     </div>
   </body>
