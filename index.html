@@ -7,16 +7,16 @@
   <body>
     <div class="row">
       <div class="text-center">
-        <h2>{{title}}</h2>
+        <h2>Who is cuter???</h2>
       </div>
       <div ng-controller="leftAnimal" class="col-md-6">
-        <div class ="animalImage"><img class="img-center" src="http://placehold.it/350x400"></div>
+        <div class ="animalImage"><img class="img-center" ng-src="{{img}}"></div>
         <div class ="animalName">{{name}}</div>
         <div class ="animalDescription">{{description}}</div>
         <button type="button" class="btn btn-info img-center">{{name}}</button>
       </div>
       <div ng-controller="rightAnimal" class="col-md-6">
-        <div class ="animalImage"><img class="img-center" src="http://placehold.it/350x400"></div>
+        <div class ="animalImage"><img class="img-center" ng-src="{{img}}"></div>
         <div class ="animalName">{{name}}</div>
         <div class ="animalDescription">{{description}}</div>
         <button type="button" class="btn btn-info img-center">{{name}}</button>
