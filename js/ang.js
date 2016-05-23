@@ -1,39 +1,37 @@
 angular.module("root", [])
     .controller("leftAnimal", ["$scope", function($scope){
      	var self = this;
-    	var name;
-    	var animalImage;
+    	var animal
 
-       function newAnimal() {
+       $scope.findAnimal = function () {
        	var randNum = Math.floor(Math.random()*animalPool.length);
-       	var animal = animalPool[randNum];
-       	animalImage = animal.img;
-       	name = animal.name;
-       	animalPool.splice(randNum, 1);
-       	console.log(animalPool);
+       	animal = animalPool[randNum];
+       	animalPool.splice(randNum, 1)
+       	changeAnimal();
        };
-       newAnimal();
+       $scope.findAnimal();
 
-       $scope.name = name;
-       $scope.img = animalImage;
+       function changeAnimal(){
+       $scope.name = animal.name;
+       $scope.img = animal.img;
+   		}
     }])
     .controller("rightAnimal", ["$scope", function($scope){
     	var self = this;
-    	var name;
-    	var animalImage;
+    	var animal
 
-       function newAnimal() {
+       $scope.findAnimal = function () {
        	var randNum = Math.floor(Math.random()*animalPool.length);
-       	var animal = animalPool[randNum];
-       	animalImage = animal.img;
-       	name = animal.name;
-       	animalPool.splice(randNum, 1);
-       	console.log(animalPool);
+       	animal = animalPool[randNum];
+       	animalPool.splice(randNum, 1)
+       	changeAnimal();
        };
-       newAnimal();
+       $scope.findAnimal();
 
-       $scope.name = name;
-       $scope.img = animalImage;
+       function changeAnimal(){
+       $scope.name = animal.name;
+       $scope.img = animal.img;
+   		}
     }]);
 
 
