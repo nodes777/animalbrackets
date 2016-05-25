@@ -1,6 +1,4 @@
 *{
-	border-style: solid;
-	border-width: 1px;
 }
 .text-center{
 	text-align: center;
@@ -11,8 +9,7 @@
     margin-right: auto
 }
 .animalImage{
-	border-style: solid;
-	border-width: 1px;
+	margin: 10px;
 }
 .animalName{
 	text-align: center;

@@ -69,11 +69,6 @@ var animals = [{
     baby: true,
     description: ""
 }, {
-    name: "Manta Ray",
-    img: "http://i.imgur.com/GhiH0Ih.jpg",
-    baby: false,
-    description: ""
-}, {
     name: "Platypus",
     img: "http://i.imgur.com/FrnR8Dc.jpg",
     baby: false,
@@ -86,6 +81,26 @@ var animals = [{
 }, {
     name: "Baby Penguin",
     img: "http://i.imgur.com/79d1OcB.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Elephant",
+    img: "http://imgur.com/XzdpuYe.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Kangaroo",
+    img: "http://imgur.com/w9odD6T.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Jaguar",
+    img: "http://imgur.com/M4rEKNJ.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Panda",
+    img: "http://imgur.com/GSDKvtF.jpg",
     baby: true,
     description: ""
 }];
