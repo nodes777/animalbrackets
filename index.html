@@ -7,24 +7,23 @@
   <body>
     <div class="row">
       <div class="text-center">
-        <h2>Who is Cuter???</h2>
+        <h1>Who is Cuter???</h1>
       </div>
-      <div ng-controller="leftAnimal" class="col-md-6">
-        <div class ="animalImage"><img class="img-center" ng-src="{{img}}"></div>
-        <div class ="animalName">{{name}}</div>
-        <div class ="animalDescription">{{description}}</div>
-        <button type="button" ng-click="findNewAnimal()" class="btn btn-info img-center">{{name}}</button>
-      </div>
-      <div ng-controller="rightAnimal" class="col-md-6">
-        <div class ="animalImage"><img class="img-center" ng-src="{{img}}"></div>
-        <div class ="animalName">{{name}}</div>
-        <div class ="animalDescription">{{description}}</div>
-        <button type="button" ng-click="findNewAnimal()" class="btn btn-info img-center">{{name}}</button>
+      <div ng-controller="animals">
+        <div class="col-md-6">
+          <div class ="animalName"><h2>{{lName}}</h2></div>
+          <div class ="animalImage"><img class="img-center" ng-src="{{lImg}}"></div>
+          <div class ="animalDescription">{{lDescription}}</div>
+          <button type="button" ng-click="changeRightAnimal()" class="btn btn-info img-center">{{lName}}</button>
+        </div>
+        <div class="col-md-6">
+          <div class ="animalName"><h2>{{rName}}</h2></div>
+          <div class ="animalImage"><img class="img-center" ng-src="{{rImg}}"></div>
+          <div class ="animalDescription">{{rDescription}}</div>
+          <button type="button" ng-click="changeLeftAnimal()" class="btn btn-info img-center">{{rName}}</button>
+        </div>
       </div>
     </div>
-    <script id="__bs_script__">//<![CDATA[
-    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.12.8.js'><\/script>".replace("HOST", location.hostname));
-//]]></script>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
   <script src="js/ang.js"></script>
