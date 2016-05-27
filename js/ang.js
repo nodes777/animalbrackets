@@ -1,4 +1,4 @@
-angular.module("root", [])
+angular.module("root", ['win', 'services'])
     .controller("animals", ["$scope", function($scope) {
         var self = this;
         var lAnimal;
@@ -20,20 +20,24 @@ angular.module("root", [])
         function setLeftAnimal() {
             $scope.lName = lAnimal.name;
             $scope.lImg = lAnimal.img;
+            $scope.lStreak = lAnimal.streak;
         }
 
         function setRightAnimal() {
             $scope.rName = rAnimal.name;
             $scope.rImg = rAnimal.img;
+            $scope.rStreak = rAnimal.streak;
         }
 
         $scope.changeLeftAnimal = function() {
             findNewLeftAnimal();
             setLeftAnimal();
+            $scope.rStreak++;
         }
         $scope.changeRightAnimal = function() {
             findNewRightAnimal();
             setRightAnimal();
+            $scope.lStreak++;
         }
 
         /*init*/
@@ -101,6 +105,31 @@ var animals = [{
 },{
     name: "Baby Panda",
     img: "http://imgur.com/GSDKvtF.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Pangolin",
+    img: "http://imgur.com/lOhSAI7.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Tapir",
+    img: "http://imgur.com/LHlrxeA.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Bongo",
+    img: "http://imgur.com/NMrYj7b.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Okapi",
+    img: "http://imgur.com/LqC45dY.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Pig",
+    img: "http://imgur.com/sZa0ses.jpg",
     baby: true,
     description: ""
 }];
