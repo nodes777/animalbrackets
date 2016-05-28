@@ -132,6 +132,26 @@ var animals = [{
     img: "http://imgur.com/sZa0ses.jpg",
     baby: true,
     description: ""
+},{
+    name: "Baby Emu",
+    img: "http://imgur.com/YrsQ39I.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Rhino",
+    img: "http://imgur.com/CT5iHXn.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Red Panda",
+    img: "http://imgur.com/ijziISi.jpg",
+    baby: false,
+    description: ""
+}{
+    name: "Fennec Fox",
+    img: "http://imgur.com/F0dubja.jpg",
+    baby: false,
+    description: ""
 }];
 
 var animalPool = [];
