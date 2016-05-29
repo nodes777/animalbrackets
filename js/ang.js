@@ -147,9 +147,34 @@ var animals = [{
     img: "http://imgur.com/ijziISi.jpg",
     baby: false,
     description: ""
-}{
+},{
     name: "Fennec Fox",
     img: "http://imgur.com/F0dubja.jpg",
+    baby: false,
+    description: ""
+},{
+    name: "Golden Brushtail Possum",
+    img: "http://imgur.com/OZ9xAJA.jpg",
+    baby: false,
+    description: ""
+},{
+    name: "Baby Leopard Seal",
+    img: "http://imgur.com/cZNjuae.jpg",
+    baby: true,
+    description: ""
+},{
+    name: "Baby Flying Squirrel",
+    img: "http://imgur.com/kpreNsb.jpg",
+    baby: false,
+    description: ""
+},{
+    name: "Baby Two Toed Sloth",
+    img: "http://imgur.com/GHJhL7Y.jpg",
+    baby: false,
+    description: ""
+},{
+    name: "Baby Raccoon",
+    img: "http://i.imgur.com/JrkyhEl.jpg",
     baby: false,
     description: ""
 }];
