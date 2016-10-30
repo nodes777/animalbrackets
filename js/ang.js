@@ -1,4 +1,4 @@
-angular.module("root", ['win', 'services'])
+angular.module("root", ['win', 'services', 'ngAnimate'])
     .controller("animals", ["$scope", function($scope) {
         var self = this;
         var lAnimal;
