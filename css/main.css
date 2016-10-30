@@ -23,15 +23,12 @@
 .streak{
 	margin-left: 50px;
 }
-.animate-show.ng-hide-add, .animate-show.ng-hide-remove {
-    transition: all linear 0.5s;
-    display: block !important;
+[animate-on-change] {
+  transition: all .5s;
+  -webkit-transition: all 1s;
 }
-
-.animate-show.ng-hide-add.ng-hide-add-active, .animate-show.ng-hide-remove {
+[animate-on-change].changed {
     opacity: 0;
-}
-
-.animate-show.ng-hide-add, .animate-show.ng-hide-remove.ng-hide-remove-active {
-    opacity: 1;
+    transition: .5s;
+    -webkit-transition: none;
 }
