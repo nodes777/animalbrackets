@@ -3,13 +3,16 @@
   <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.16.0'><\/script>".replace("HOST", location.hostname));
+//]]></script>
   </head>
   <body>
     <div class="row">
       <div class="text-center">
         <h1>Who is Cuter???</h1>
       </div>
-      <div ng-controller="animals">
+      <div ng-controller="index">
         <div class="col-md-6">
           <div class ="animalName"><h2>{{lName}} <span class="streak">{{lStreak}}</span></h2></div>
           <div animate-on-change="lName" class ="animalImage "><img fade-in class="img-center boxShadow" ng-src="{{lImg}}"></div>
@@ -27,7 +30,7 @@
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+    <script src="js/services.js"></script>
   <script src="js/ang.js"></script>
   <script src="js/directives.js"></script>
-  <script src="js/services.js"></script>
 </html>
