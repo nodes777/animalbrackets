@@ -23,12 +23,20 @@
 .streak{
 	margin-left: 50px;
 }
-[animate-on-change] {
-  transition: all .5s;
-  -webkit-transition: all 1s;
+.ng-hide-add, .ng-hide-remove {
+    /* ensure visibility during the transition */
+    display: block !important; /* yes, important */
 }
-[animate-on-change].changed {
-    opacity: 0;
-    transition: .5s;
-    -webkit-transition: none;
+.cssSlideUp {
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.cssSlideUp.showy{
+	opacity: 1;
+}
+.cssSlideUp.hidey{
+	opacity: 0;
 }
