@@ -42,18 +42,16 @@ app.directive('fadeIn', function($timeout){
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
+          element.on("load", function () {
+                    element.removeClass("hidey");
+                    element.addClass("showy");
+            });
           attrs.$observe("ngSrc", function () {
               console.log("change")
                 element.removeClass("showy");
                 element.addClass("hidey");
             })
-            element.on("load", function () {
-                $timeout(function () {
-                    element.removeClass("hidey");
-                    element.addClass("showy");
-                }, 500);
-            });
-            
+
         }
     }
 })
